@@ -20,38 +20,47 @@
         </label>
         <div class="relative h-auto w-auto p-8 bg-[#55AD98] rounded-3xl">
             <div>
-                <div class="flex items-end my-5 w-auto h-32 font-bold text-black" id="display"></div>
+                <div class="flex justify-end items-end text-4xl my-5 w-auto h-16 font-bold text-black" id="display"></div>
             </div>
-            <div class="">
-                <table class="bg-[#55AD9B]">
-                    <tr class="">
-                        <td><button class="mb-5 mx-2 bg-[#A8DADC] hover:bg-[#457B9D] font-semibold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-2xl" id="limpiar">C</button></td>
-                        <td><button class="mb-5 mx-2 bg-[#D8EFD3] hover:bg-[#95D2B3] font-semibold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-2xl" id="/">/</button></td>
-                        <td><button class="mb-5 mx-2 bg-[#D8EFD3] hover:bg-[#95D2B3] font-semibold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-2xl" id="*">*</button></td>
-                        <td><button class="mb-5 mx-2 bg-[#A8DADC] hover:bg-[#457B9D] font-semibold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-2xl" id="borrar"><-</button></td>
-                    </tr>
-                    <tr class="">
-                        <td><button class="mb-5 mx-2 bg-[#F1F8E8] hover:bg-[#AAB99A] font-semibold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-2xl" id="7">7</button></td>
-                        <td><button class="mb-5 mx-2 bg-[#F1F8E8] hover:bg-[#AAB99A] font-semibold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-2xl" id="8">8</button></td>
-                        <td><button class="mb-5 mx-2 bg-[#F1F8E8] hover:bg-[#AAB99A] font-semibold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-2xl" id="9">9</button></td>
-                        <td><button class="mb-5 mx-2 bg-[#D8EFD3] hover:bg-[#95D2B3] font-semibold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-2xl" id="-">-</button></td>
-                    </tr>
+            <div>
+                <table class="bg-[#55AD9B] text-center">
+                    <!-- Primera fila de la calculadora -->
                     <tr>
-                        <td><button class="mb-5 mx-2 bg-[#F1F8E8] hover:bg-[#AAB99A] font-semibold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-2xl" id="4">4</button></td>
-                        <td><button class="mb-5 mx-2 bg-[#F1F8E8] hover:bg-[#AAB99A] font-semibold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-2xl" id="5">5</button></td>
-                        <td><button class="mb-5 mx-2 bg-[#F1F8E8] hover:bg-[#AAB99A] font-semibold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-2xl" id="6">6</button></td>
-                        <td><button class="mb-5 mx-2 bg-[#D8EFD3] hover:bg-[#95D2B3] font-semibold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-2xl" id="+">+</button></td>
+                        <td><button class="h-16 w-16 mb-5 mx-2 bg-[#A8DADC] hover:bg-[#457B9D] font-semibold rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-3xl" id="limpiar">C</button></td>
+                        <td><button class="h-16 w-16 mb-5 mx-2 bg-[#D8EFD3] hover:bg-[#95D2B3] font-semibold rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-3xl" id="/">/</button></td>
+                        <td><button class="h-16 w-16 mb-5 mx-2 bg-[#D8EFD3] hover:bg-[#95D2B3] font-semibold rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-3xl" id="*">*</button></td>
+                        <td><button class="h-16 w-16 mb-5 mx-2 bg-[#A8DADC] hover:bg-[#457B9D] font-semibold rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-3xl" id="borrar"><</button></td>
                     </tr>
+
+                    <!-- Segunda fila de la calculadora -->
                     <tr>
-                        <td><button class="mb-5 mx-2 bg-[#F1F8E8] hover:bg-[#AAB99A] font-semibold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-2xl" id="1">1</button></td>
-                        <td><button class="mb-5 mx-2 bg-[#F1F8E8] hover:bg-[#AAB99A] font-semibold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-2xl" id="2">2</button></td>
-                        <td><button class="mb-5 mx-2 bg-[#F1F8E8] hover:bg-[#AAB99A] font-semibold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-2xl" id="3">3</button></td>
-                        <td rowspan="2"><button class="mb-5 mx-2 bg-[#D8EFD3] hover:bg-[#95D2B3] font-semibold py-11 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-2xl" id="igual">=</button></td>
+                        <td><button class="h-16 w-16 mb-5 mx-2 bg-[#F1F8E8] hover:bg-[#AAB99A] font-semibold rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-3xl" id="7">7</button></td>
+                        <td><button class="h-16 w-16 mb-5 mx-2 bg-[#F1F8E8] hover:bg-[#AAB99A] font-semibold rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-3xl" id="8">8</button></td>
+                        <td><button class="h-16 w-16 mb-5 mx-2 bg-[#F1F8E8] hover:bg-[#AAB99A] font-semibold rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-3xl" id="9">9</button></td>
+                        <td><button class="h-16 w-16 mb-5 mx-2 bg-[#D8EFD3] hover:bg-[#95D2B3] font-semibold rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-3xl" id="-">-</button></td>
                     </tr>
+
+                    <!-- Tercera fila de la calculadora -->
                     <tr>
-                        <td><button class="mb-5 mx-2 bg-[#D8EFD3] hover:bg-[#95D2B3] font-semibold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-2xl" id=",">,</button></td>
-                        <td><button class="mb-5 mx-2 bg-[#F1F8E8] hover:bg-[#AAB99A] font-semibold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-2xl" id="0">0</button></td>
-                        <td><button class="mb-5 mx-2 bg-[#F1F8E8] hover:bg-[#AAB99A] font-semibold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-2xl" id="00">00</button></td>
+                        <td><button class="h-16 w-16 mb-5 mx-2 bg-[#F1F8E8] hover:bg-[#AAB99A] font-semibold rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-3xl" id="4">4</button></td>
+                        <td><button class="h-16 w-16 mb-5 mx-2 bg-[#F1F8E8] hover:bg-[#AAB99A] font-semibold rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-3xl" id="5">5</button></td>
+                        <td><button class="h-16 w-16 mb-5 mx-2 bg-[#F1F8E8] hover:bg-[#AAB99A] font-semibold rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-3xl" id="6">6</button></td>
+                        <td><button class="h-16 w-16 mb-5 mx-2 bg-[#D8EFD3] hover:bg-[#95D2B3] font-semibold rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-3xl" id="+">+</button></td>
+                    </tr>
+
+                    <!-- Cuarta fila de la calculadora -->
+                    <tr>
+                        <td><button class="h-16 w-16 mb-5 mx-2 bg-[#F1F8E8] hover:bg-[#AAB99A] font-semibold rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-3xl" id="1">1</button></td>
+                        <td><button class="h-16 w-16 mb-5 mx-2 bg-[#F1F8E8] hover:bg-[#AAB99A] font-semibold rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-3xl" id="2">2</button></td>
+                        <td><button class="h-16 w-16 mb-5 mx-2 bg-[#F1F8E8] hover:bg-[#AAB99A] font-semibold rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-3xl" id="3">3</button></td>
+                        <td rowspan="2"><button class="h-36 w-16 mb-5 mx-2 bg-[#D8EFD3] hover:bg-[#95D2B3] font-semibold rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-3xl" id="igual">=</button></td>
+                    </tr>
+
+                    <!-- Ultima fila de la calculadora -->
+                    <tr>
+                        <td><button class="h-16 w-16 mb-5 mx-2 bg-[#D8EFD3] hover:bg-[#95D2B3] font-semibold rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-3xl" id=",">,</button></td>
+                        <td><button class="h-16 w-16 mb-5 mx-2 bg-[#F1F8E8] hover:bg-[#AAB99A] font-semibold rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-3xl" id="0">0</button></td>
+                        <td><button class="h-16 w-16 mb-5 mx-2 bg-[#F1F8E8] hover:bg-[#AAB99A] font-semibold rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out text-3xl" id="00">00</button></td>
                     </tr>
                 </table>
             </div>
