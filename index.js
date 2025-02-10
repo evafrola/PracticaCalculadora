@@ -6,16 +6,16 @@ const buttons = document.querySelectorAll("button");
 buttons.forEach((item) => {
     item.addEventListener("click", ()=>{
       if(item.id === "limpiar"){  //Funcionalidad de el boton "C" que elimina todo
-        display.value="";
+        display.textContent ="";
       } else if(item.id === "borrar"){ //Funcionalidad de el boton "<-" que borra letra por letra
-        display.value = display.value.slice(0, -1)
-      } else if(display.value != "" && item.id === "igual"){ //Funcionalidad de el boton "="
-        display.value = eval(display.value)
-      } else if(display.value == "" && item.id === "igual"){//Funcion en caso de errores al estar vacio
-        display.value = "Null"
-        setTimeout(()=> (display.value = ""), 3000)
+        display.textContent = display.textContent.slice(0, -1)
+      } else if(display.textContent != "" && item.id === "igual"){ //Funcionalidad de el boton "="
+        display.textContent = eval(display.textContent)
+      } else if(display.textContent == "" && item.id === "igual"){//Funcion en caso de errores al estar vacio
+        display.textContent = "Null"
+        setTimeout(()=> (display.textContent = ""), 2000)
       } else {
-        display.value += item.id;
+        display.textContent += item.id;
       }
     })
 });
