@@ -1,5 +1,5 @@
 //Variables
-const display = document.querySelector("display");
+const display = document.getElementById("display");
 const buttons = document.querySelectorAll("button");
 
 //Dandole funcionalidad a cada boton por un array de botones
@@ -11,6 +11,11 @@ buttons.forEach((item) => {
         display.value = display.value.slice(0, -1)
       } else if(display.value != "" && item.id === "igual"){ //Funcionalidad de el boton "="
         display.value = eval(display.value)
+      } else if(display.value == "" && item.id === "igual"){//Funcion en caso de errores al estar vacio
+        display.value = "Null"
+        setTimeout(()=> (display.value = ""), 3000)
+      } else {
+        display.value += item.id;
       }
     })
 });
