@@ -19,3 +19,11 @@ buttons.forEach((item) => {
       }
     })
 });
+
+//Funcion del boton switch para cambio a darck
+const buttonSwitch = document.querySelector("#darkmode");
+
+buttonSwitch.addEventListener('click', ()=> {
+  document.documentElement.classList.toggle('dark');
+})
+
